@@ -1,0 +1,532 @@
+1.
+      160 | CHRIS       | DEPP         | 2006-02-15 04:34:33 |
+|      161 | HARVEY      | HOPE         | 2006-02-15 04:34:33 |
+|      162 | OPRAH       | KILMER       | 2006-02-15 04:34:33 |
+|      163 | CHRISTOPHER | WEST         | 2006-02-15 04:34:33 |
+|      164 | HUMPHREY    | WILLIS       | 2006-02-15 04:34:33 |
+|      165 | AL          | GARLAND      | 2006-02-15 04:34:33 |
+|      166 | NICK        | DEGENERES    | 2006-02-15 04:34:33 |
+|      167 | LAURENCE    | BULLOCK      | 2006-02-15 04:34:33 |
+|      168 | WILL        | WILSON       | 2006-02-15 04:34:33 |
+|      169 | KENNETH     | HOFFMAN      | 2006-02-15 04:34:33 |
+|      170 | MENA        | HOPPER       | 2006-02-15 04:34:33 |
+|      171 | OLYMPIA     | PFEIFFER     | 2006-02-15 04:34:33 |
+|      172 | GROUCHO     | WILLIAMS     | 2006-02-15 04:34:33 |
+|      173 | ALAN        | DREYFUSS     | 2006-02-15 04:34:33 |
+|      174 | MICHAEL     | BENING       | 2006-02-15 04:34:33 |
+|      175 | WILLIAM     | HACKMAN      | 2006-02-15 04:34:33 |
+|      176 | JON         | CHASE        | 2006-02-15 04:34:33 |
+|      177 | GENE        | MCKELLEN     | 2006-02-15 04:34:33 |
+|      178 | LISA        | MONROE       | 2006-02-15 04:34:33 |
+|      179 | ED          | GUINESS      | 2006-02-15 04:34:33 |
+|      180 | JEFF        | SILVERSTONE  | 2006-02-15 04:34:33 |
+|      181 | MATTHEW     | CARREY       | 2006-02-15 04:34:33 |
+|      182 | DEBBIE      | AKROYD       | 2006-02-15 04:34:33 |
+|      183 | RUSSELL     | CLOSE        | 2006-02-15 04:34:33 |
+|      184 | HUMPHREY    | GARLAND      | 2006-02-15 04:34:33 |
+|      185 | MICHAEL     | BOLGER       | 2006-02-15 04:34:33 |
+|      186 | JULIA       | ZELLWEGER    | 2006-02-15 04:34:33 |
+|      187 | RENEE       | BALL         | 2006-02-15 04:34:33 |
+|      188 | ROCK        | DUKAKIS      | 2006-02-15 04:34:33 |
+|      189 | CUBA        | BIRCH        | 2006-02-15 04:34:33 |
+|      190 | AUDREY      | BAILEY       | 2006-02-15 04:34:33 |
+|      191 | GREGORY     | GOODING      | 2006-02-15 04:34:33 |
+|      192 | JOHN        | SUVARI       | 2006-02-15 04:34:33 |
+|      193 | BURT        | TEMPLE       | 2006-02-15 04:34:33 |
+|      194 | MERYL       | ALLEN        | 2006-02-15 04:34:33 |
+|      195 | JAYNE       | SILVERSTONE  | 2006-02-15 04:34:33 |
+|      196 | BELA        | WALKEN       | 2006-02-15 04:34:33 |
+|      197 | REESE       | WEST         | 2006-02-15 04:34:33 |
+|      198 | MARY        | KEITEL       | 2006-02-15 04:34:33 |
+|      199 | JULIA       | FAWCETT      | 2006-02-15 04:34:33 |
+|      200 | THORA       | TEMPLE       | 2006-02-15 04:34:33 |
++----------+-------------+--------------+---------------------+
+200 rows in set (0.01 sec)
+mysql> select * from actor;
+
+2.
++----------+------------+-----------+---------------------+
+| actor_id | first_name | last_name | last_update         |
++----------+------------+-----------+---------------------+
+|      192 | JOHN       | SUVARI    | 2006-02-15 04:34:33 |
++----------+------------+-----------+---------------------+
+1 row in set (0.01 sec)
+mysql> select * from actor where first_name ='john';
+
+3.
++----------+------------+-----------+---------------------+
+| actor_id | first_name | last_name | last_update         |
++----------+------------+-----------+---------------------+
+|       61 | CHRISTIAN  | NEESON    | 2006-02-15 04:34:33 |
+|       62 | JAYNE      | NEESON    | 2006-02-15 04:34:33 |
++----------+------------+-----------+---------------------+
+2 rows in set (0.01 sec)
+
+mysql> select * from actor where last_name = 'neeson';
+
+4.
++----------+------------+-------------+---------------------+
+| actor_id | first_name | last_name   | last_update         |
++----------+------------+-------------+---------------------+
+|       10 | CHRISTIAN  | GABLE       | 2006-02-15 04:34:33 |
+|       20 | LUCILLE    | TRACY       | 2006-02-15 04:34:33 |
+|       30 | SANDRA     | PECK        | 2006-02-15 04:34:33 |
+|       40 | JOHNNY     | CAGE        | 2006-02-15 04:34:33 |
+|       50 | NATALIE    | HOPKINS     | 2006-02-15 04:34:33 |
+|       60 | HENRY      | BERRY       | 2006-02-15 04:34:33 |
+|       70 | MICHELLE   | MCCONAUGHEY | 2006-02-15 04:34:33 |
+|       80 | RALPH      | CRUZ        | 2006-02-15 04:34:33 |
+|       90 | SEAN       | GUINESS     | 2006-02-15 04:34:33 |
+|      100 | SPENCER    | DEPP        | 2006-02-15 04:34:33 |
+|      110 | SUSAN      | DAVIS       | 2006-02-15 04:34:33 |
+|      120 | PENELOPE   | MONROE      | 2006-02-15 04:34:33 |
+|      130 | GRETA      | KEITEL      | 2006-02-15 04:34:33 |
+|      140 | WHOOPI     | HURT        | 2006-02-15 04:34:33 |
+|      150 | JAYNE      | NOLTE       | 2006-02-15 04:34:33 |
+|      160 | CHRIS      | DEPP        | 2006-02-15 04:34:33 |
+|      170 | MENA       | HOPPER      | 2006-02-15 04:34:33 |
+|      180 | JEFF       | SILVERSTONE | 2006-02-15 04:34:33 |
+|      190 | AUDREY     | BAILEY      | 2006-02-15 04:34:33 |
+|      200 | THORA      | TEMPLE      | 2006-02-15 04:34:33 |
++----------+------------+-------------+---------------------+
+20 rows in set (0.01 sec)
+
+mysql> select * from actor where actor_id %10 =0;
+
+5.
++---------+-----------------------------------------------------------------------------------------------------------------+
+| film_id | description                                                                                                     |
++---------+-----------------------------------------------------------------------------------------------------------------+
+|     100 | A Beautiful Drama of a Dentist And a Composer who must Battle a Sumo Wrestler in The First Manned Space Station |
++---------+-----------------------------------------------------------------------------------------------------------------+
+1 row in set (0.01 sec)
+
+mysql> select film_id, description from film where film_id=100;
+
+
+
+6.
+|     822 | SOUP WISDOM             | R      |
+|     823 | SOUTH WAIT              | R      |
+|     830 | SPIRIT FLINTSTONES      | R      |
+|     833 | SPLENDOR PATTON         | R      |
+|     838 | STAGECOACH ARMAGEDDON   | R      |
+|     840 | STAMPEDE DISTURBING     | R      |
+|     850 | STORY SIDE              | R      |
+|     851 | STRAIGHT HOURS          | R      |
+|     854 | STRANGERS GRAFFITI      | R      |
+|     856 | STREETCAR INTENTIONS    | R      |
+|     858 | SUBMARINE BED           | R      |
+|     861 | SUIT WALLS              | R      |
+|     863 | SUN CONFESSIONS         | R      |
+|     872 | SWEET BROTHERHOOD       | R      |
+|     884 | TERMINATOR CLUB         | R      |
+|     889 | TIES HUNGER             | R      |
+|     890 | TIGHTS DAWN             | R      |
+|     892 | TITANIC BOONDOCK        | R      |
+|     895 | TOMORROW HUSTLER        | R      |
+|     900 | TOWN ARK                | R      |
+|     904 | TRAIN BUNCH             | R      |
+|     913 | TROOPERS METAL          | R      |
+|     917 | TUXEDO MILE             | R      |
+|     923 | UNFAITHFUL KILL         | R      |
+|     925 | UNITED PILOT            | R      |
+|     930 | VACATION BOONDOCK       | R      |
+|     935 | VANISHED GARDEN         | R      |
+|     938 | VELVET TERMINATOR       | R      |
+|     939 | VERTIGO NORTHWEST       | R      |
+|     945 | VIRGINIAN PLUTO         | R      |
+|     961 | WASH HEAVENLY           | R      |
+|     967 | WEEKEND PERSONAL        | R      |
+|     974 | WILD APOLLO             | R      |
+|     975 | WILLOW TRACY            | R      |
+|     976 | WIND PHANTOM            | R      |
+|     977 | WINDOW SIDE             | R      |
+|     978 | WISDOM WORKER           | R      |
+|     982 | WOMEN DORADO            | R      |
+|     988 | WORKER TARZAN           | R      |
+|     989 | WORKING MICROCOSMOS     | R      |
+|     995 | YENTL IDAHO             | R      |
+|     999 | ZOOLANDER FICTION       | R      |
++---------+-------------------------+--------+
+195 rows in set (0.01 sec)
+
+mysql> select film_id, title, rating from film where rating ='r';
+
+
+
+7.
+
+   987 | WORDS HUNTER                | PG     |
+|     990 | WORLD LEATHERNECKS          | PG-13  |
+|     991 | WORST BANGER                | PG     |
+|     992 | WRATH MILE                  | NC-17  |
+|     993 | WRONG BEHAVIOR              | PG-13  |
+|     994 | WYOMING STORM               | PG-13  |
+|     996 | YOUNG LANGUAGE              | G      |
+|     997 | YOUTH KICK                  | NC-17  |
+|     998 | ZHIVAGO CORE                | NC-17  |
+|    1000 | ZORRO ARK                   | NC-17  |
++---------+-----------------------------+--------+
+805 rows in set (0.01 sec)
+
+mysql> select film_id, title, rating from film where rating !='r';
+
+
+8.
++---------+---------------------+--------+
+| film_id | title               | length |
++---------+---------------------+--------+
+|     730 | RIDGEMONT SUBMARINE |     46 |
+|     469 | IRON MOON           |     46 |
+|      15 | ALIEN CENTER        |     46 |
+|     505 | LABYRINTH LEAGUE    |     46 |
+|     504 | KWAI HOMEWARD       |     46 |
+|     247 | DOWNHILL ENOUGH     |     47 |
+|     393 | HALLOWEEN NUTS      |     47 |
+|     398 | HANOVER GALAXY      |     47 |
+|     237 | DIVORCE SHINING     |     47 |
+|     407 | HAWK CHILL          |     47 |
++---------+---------------------+--------+
+10 rows in set (0.01 sec)
+
+mysql> select film_id, title, length from film order by length asc limit 10;
+
+
+9.
+WRONG BEHAVIOR              |
+| WYOMING STORM               |
+| YENTL IDAHO                 |
+| YOUNG LANGUAGE              |
+| YOUTH KICK                  |
+| ZHIVAGO CORE                |
+| ZOOLANDER FICTION           |
+| ZORRO ARK                   |
++-----------------------------+
+1000 rows in set (0.01 sec)
+
+mysql> select title from film;
+
+
+
+
+10.
+|     947 | VISION TORQUE               | Commentaries,Deleted Scenes                            |
+|     949 | VOLCANO TEXAS               | Trailers,Commentaries,Deleted Scenes,Behind the Scenes |
+|     952 | WAGON JAWS                  | Deleted Scenes,Behind the Scenes                       |
+|     954 | WAKE JAWS                   | Trailers,Commentaries,Deleted Scenes,Behind the Scenes |
+|     956 | WANDA CHAMBER               | Commentaries,Deleted Scenes,Behind the Scenes          |
+|     957 | WAR NOTTING                 | Deleted Scenes,Behind the Scenes                       |
+|     962 | WASTELAND DIVINE            | Trailers,Deleted Scenes,Behind the Scenes              |
+|     963 | WATCH TRACY                 | Trailers,Deleted Scenes,Behind the Scenes              |
+|     967 | WEEKEND PERSONAL            | Trailers,Commentaries,Deleted Scenes,Behind the Scenes |
+|     970 | WESTWARD SEABISCUIT         | Commentaries,Deleted Scenes                            |
+|     971 | WHALE BIKINI                | Commentaries,Deleted Scenes,Behind the Scenes          |
+|     972 | WHISPERER GIANT             | Trailers,Deleted Scenes                                |
+|     973 | WIFE TURN                   | Deleted Scenes,Behind the Scenes                       |
+|     974 | WILD APOLLO                 | Trailers,Commentaries,Deleted Scenes,Behind the Scenes |
+|     976 | WIND PHANTOM                | Commentaries,Deleted Scenes                            |
+|     977 | WINDOW SIDE                 | Deleted Scenes,Behind the Scenes                       |
+|     978 | WISDOM WORKER               | Deleted Scenes,Behind the Scenes                       |
+|     980 | WIZARD COLDBLOODED          | Commentaries,Deleted Scenes,Behind the Scenes          |
+|     982 | WOMEN DORADO                | Deleted Scenes,Behind the Scenes                       |
+|     987 | WORDS HUNTER                | Trailers,Commentaries,Deleted Scenes                   |
+|     989 | WORKING MICROCOSMOS         | Commentaries,Deleted Scenes                            |
+|     991 | WORST BANGER                | Deleted Scenes,Behind the Scenes                       |
+|     994 | WYOMING STORM               | Deleted Scenes                                         |
+|     995 | YENTL IDAHO                 | Trailers,Commentaries,Deleted Scenes                   |
+|     998 | ZHIVAGO CORE                | Deleted Scenes                                         |
+|     999 | ZOOLANDER FICTION           | Trailers,Deleted Scenes                                |
++---------+-----------------------------+--------------------------------------------------------+
+503 rows in set (0.01 sec)
+
+mysql> select film_id, title, special_features from film where special_features like '%deleted scenes%';
+
+
+
+11.
+
+| HAWKE        |        1 |
+| HESTON       |        1 |
+| HOPE         |        1 |
+| HUDSON       |        1 |
+| HUNT         |        1 |
+| HURT         |        1 |
+| JOLIE        |        1 |
+| JOVOVICH     |        1 |
+| LEIGH        |        1 |
+| LOLLOBRIGIDA |        1 |
+| MALDEN       |        1 |
+| MANSFIELD    |        1 |
+| MARX         |        1 |
+| MCDORMAND    |        1 |
+| MIRANDA      |        1 |
+| NICHOLSON    |        1 |
+| PESCI        |        1 |
+| PFEIFFER     |        1 |
+| PHOENIX      |        1 |
+| PINKETT      |        1 |
+| PITT         |        1 |
+| POSEY        |        1 |
+| PRESLEY      |        1 |
+| REYNOLDS     |        1 |
+| RYDER        |        1 |
+| SINATRA      |        1 |
+| SOBIESKI     |        1 |
+| STALLONE     |        1 |
+| SUVARI       |        1 |
+| SWANK        |        1 |
+| TAUTOU       |        1 |
+| TOMEI        |        1 |
+| VOIGHT       |        1 |
+| WALKEN       |        1 |
+| WAYNE        |        1 |
+| WILSON       |        1 |
+| WITHERSPOON  |        1 |
+| WRAY         |        1 |
++--------------+----------+
+66 rows in set (0.01 sec)
+
+mysql> select last_name, count(last_name) as repeated from actor group by last_name  having count(last_name) = 1;
+
+
+
+12.
+
+     |        3 |
+| HACKMAN     |        2 |
+| HARRIS      |        3 |
+| HOFFMAN     |        3 |
+| HOPKINS     |        3 |
+| HOPPER      |        2 |
+| JACKMAN     |        2 |
+| JOHANSSON   |        3 |
+| KEITEL      |        3 |
+| KILMER      |        5 |
+| MCCONAUGHEY |        2 |
+| MCKELLEN    |        2 |
+| MCQUEEN     |        2 |
+| MONROE      |        2 |
+| MOSTEL      |        2 |
+| NEESON      |        2 |
+| NOLTE       |        4 |
+| OLIVIER     |        2 |
+| PALTROW     |        2 |
+| PECK        |        3 |
+| PENN        |        2 |
+| SILVERSTONE |        2 |
+| STREEP      |        2 |
+| TANDY       |        2 |
+| TEMPLE      |        4 |
+| TORN        |        3 |
+| TRACY       |        2 |
+| WAHLBERG    |        2 |
+| WEST        |        2 |
+| WILLIAMS    |        3 |
+| WILLIS      |        3 |
+| WINSLET     |        2 |
+| WOOD        |        2 |
+| ZELLWEGER   |        3 |
++-------------+----------+
+55 rows in set (0.01 sec)
+
+mysql> select last_name, count(last_name) as repeated from actor group by last_name  having count(last_name) > 1;
+
+13.
+
++----------+------------+-----------+-------------------+
+| actor_id | first_name | last_name | count(fa.film_id) |
++----------+------------+-----------+-------------------+
+|      107 | GINA       | DEGENERES |                42 |
+|      102 | WALTER     | TORN      |                41 |
+|      198 | MARY       | KEITEL    |                40 |
+|      181 | MATTHEW    | CARREY    |                39 |
+|       23 | SANDRA     | KILMER    |                37 |
++----------+------------+-----------+-------------------+
+5 rows in set (0.01 sec)
+
+mysql> select a.actor_id,a.first_name, a.last_name, count(fa.film_id) from actor a left join film_actor fa on a.actor_id = fa.actor_id group by a.actor_id order by count(fa.film_id) desc limit 5;
+
+Answer = Gina Degeneres
+
+
+14.
+| title            | film_id | store_id |
++------------------+---------+----------+
+| ACADEMY DINOSAUR |       1 |        1 |
+| ACADEMY DINOSAUR |       1 |        1 |
+| ACADEMY DINOSAUR |       1 |        1 |
+| ACADEMY DINOSAUR |       1 |        1 |
++------------------+---------+----------+
+4 rows in set (0.01 sec)
+
+mysql> select f.title, f.film_id, i.store_id from inventory i left join film f on f.film_id = i.film_id where f.title = 'academy dinosaur' and i.store_id =1; YES
+
+
+
+15.
++-----------+---------------------+--------------+-------------+---------------------+----------+---------------------+
+| rental_id | rental_date         | inventory_id | customer_id | return_date         | staff_id | last_update         |
++-----------+---------------------+--------------+-------------+---------------------+----------+---------------------+
+|         1 | 2005-05-24 22:53:30 |          367 |         130 | 2005-05-26 22:04:30 |        1 | 2006-02-15 21:30:53 |
+|         2 | 2005-05-24 22:54:33 |         1525 |         459 | 2005-05-28 19:40:33 |        1 | 2006-02-15 21:30:53 |
+|         3 | 2005-05-24 23:03:39 |         1711 |         408 | 2005-06-01 22:12:39 |        1 | 2006-02-15 21:30:53 |
+|         4 | 2005-05-24 23:04:41 |         2452 |         333 | 2005-06-03 01:43:41 |        2 | 2006-02-15 21:30:53 |
++-----------+---------------------+--------------+-------------+---------------------+----------+---------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from rental limit 4; 
+ inventory_id for "Academy Dinosaur" is 1,2,3,4 hence the category return_date states when they are due to be returned.
+
+
+16.
+| avg(length) |
++-------------+
+|    115.2720 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select avg(length) from film;
+
+
+17.
+
++---------------+
+| avg(f.length) |
++---------------+
+|      115.2720 |
++---------------+
+1 row in set (0.01 sec)
+
+mysql> select avg(f.length) from film_category fc left join film f on fc.film_id = f.film_id;
+
+
+18.
++----------+
+| count(*) |
++----------+
+|       77 |
++----------+
+1 row in set (0.01 sec)
+
+mysql> select count(*) from film where description like '%robot%';
+
+
+19.
+
++--------------------+--------+
+| title              | length |
++--------------------+--------+
+| DARN FORRESTER     |    185 |
+| POND SEATTLE       |    185 |
+| CHICAGO NORTH      |    185 |
+| MUSCLE BRIGHT      |    185 |
+| WORST BANGER       |    185 |
+| GANGS PRIDE        |    185 |
+| SOLDIERS EVOLUTION |    185 |
+| HOME PITY          |    185 |
+| SWEET BROTHERHOOD  |    185 |
+| CONTROL ANTHEM     |    185 |
++--------------------+--------+
+10 rows in set (0.01 sec)
+
+mysql> select title, length from film order by length desc limit 10;
+
+20.
++----------+
+| count(*) |
++----------+
+|     1000 |
++----------+
+1 row in set (0.01 sec)
+
+mysql> select count(*) from film where release_year =2006;
+
++----------+
+| count(*) |
++----------+
+|        0 |
++----------+
+1 row in set (0.01 sec)
+
+mysql> select count(*) from film where release_year =2010; #nothing released in 2010;
+
+
+21.
+
+
+
+
+22.
+
++--------------+
+| fullname     |
++--------------+
+| Mike Hillyer |
++--------------+
+1 row in set (0.01 sec)
+
+mysql> select concat(first_name, ' ', last_name) as fullname from staff where staff_id = 1;
+
+
+25.
++----------+
+| name     |
++----------+
+| English  |
+| French   |
+| German   |
+| Italian  |
+| Japanese |
+| Mandarin |
++----------+
+6 rows in set (0.01 sec)
+
+mysql> select distinct name from language group by name order by name asc ;
+
+
+
+26.
+| fullname          |
++-------------------+
+| ALBERT JOHANSSON  |
+| ANGELA HUDSON     |
+| BETTE NICHOLSON   |
+| CHRISTIAN NEESON  |
+| JAYNE NEESON      |
+| MATTHEW JOHANSSON |
+| MERYL GIBSON      |
+| RAY JOHANSSON     |
+| WILL WILSON       |
++-------------------+
+9 rows in set (0.01 sec)
+
+mysql> select concat(first_name, ' ', last_name) as fullname from actor where last_name like '%son%' order by first_name asc;
+
+
+
+27.
+
++-------------+---------------+
+| name        | count(c.name) |
++-------------+---------------+
+| Action      |            64 |
+| Animation   |            66 |
+| Children    |            60 |
+| Classics    |            57 |
+| Comedy      |            58 |
+| Documentary |            68 |
+| Drama       |            62 |
+| Family      |            69 |
+| Foreign     |            73 |
+| Games       |            61 |
+| Horror      |            56 |
+| Music       |            51 |
+| New         |            63 |
+| Sci-Fi      |            61 |
+| Sports      |            74 |
+| Travel      |            57 |
++-------------+---------------+
+16 rows in set (0.01 sec)
+
+mysql> select c.name, count(c.name) from category c left join film_category f on c.category_id = f.category_id group by c.name;
